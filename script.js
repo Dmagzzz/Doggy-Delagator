@@ -28,5 +28,21 @@ getApi("Exeter");
 
 fetchButton.addEventListener("click", getApi);
 
+
+//This function fetches the dog-facts-api
+fetch(url)
+const url = 'https:dog-facts-api.herokuapp.com/api/v1/resources/dogs/all' 
+.then(function(response) {
+    return response.json();
+})
+.then(function(data) { //this function selects a random dog fact
+    console.log(data);
+    const num = Math.floor(Math.random()*data.length)
+    const dogFact = data[num]
+    console.log(dogFact)
+});
+
+
+
 // Assignment code here
 
