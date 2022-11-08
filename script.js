@@ -1,14 +1,19 @@
 // Assignment code here
 
 function setup() {
-    createCanvas(200, 200);
-    loadJSON ('https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all', gotData):
-    }
-    
-    function gotData(data) {
-        println(data);
-    }
+//    fetch ('https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all')
+//    .then(function(response))
+    const url = 'https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all';
 
-    function draw() {
-        backround(0);
-    }
+    fetch(url)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            console.log(data);
+        });
+    
+}
+
+setup();
+    
