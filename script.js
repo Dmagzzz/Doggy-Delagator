@@ -1,19 +1,32 @@
-// Assignment code here
+function getApi(input) {
+  // fetch request gets a list of all the repos for the node.js organization
+  const requestUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${input}&appid=a74bf83c5240b68543e1753ef9d16b93`;
 
-function setup() {
-//    fetch ('https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all')
-//    .then(function(response))
-    const url = 'https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all';
-
-    fetch(url)
-        .then(function(response) {
-            return response.json();
-        })
-        .then(function(data) {
-            console.log(data);
-        });
-    
+  fetch(requestUrl)
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (data) {
+      getWeather(data[0]);
+    });
 }
 
-setup();
-    
+function getWeather(location) {
+  const lat = location.lat;
+  const lon = location.lon;
+  const requestUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=a74bf83c5240b68543e1753ef9d16b93`;
+  fetch(requestUrl)
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    });
+}
+
+getApi("Exeter");
+
+fetchButton.addEventListener("click", getApi);
+
+// Assignment code here
+
