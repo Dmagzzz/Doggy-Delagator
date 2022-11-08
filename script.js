@@ -1,3 +1,5 @@
+console.log('hello');
+
 function getApi(input) {
   // fetch request gets a list of all the repos for the node.js organization
   const requestUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${input}&appid=a74bf83c5240b68543e1753ef9d16b93`;
