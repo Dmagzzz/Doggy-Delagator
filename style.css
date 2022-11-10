@@ -1,13 +1,9 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
-adding-style
 body {
   background: linear-gradient(45deg, rgb(248, 248, 76), rgb(239, 61, 61));
 }
 
-<style>
-h1 {text-align: center;}
-p {text-align: center;}
-div {text-align: center;}
-</style>
-
+.hero {
+  text-align: center;
+}
