@@ -7,3 +7,20 @@ body {
 .hero {
   text-align: center;
 }
+
+.box {
+    text-align: center;
+    background: linear-gradient(45deg, rgb(248, 248, 76), rgb(239, 61, 61));
+}
+
+.bottom {
+    text-align: center;
+}
+
+.p1 {
+    font-family: "Lucida Console", "Courier New", monospace
+    }
+
+    .p2 {
+        font-family: "Lucida Console", "Courier New", monospace
+    }
