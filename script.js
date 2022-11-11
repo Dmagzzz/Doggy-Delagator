@@ -27,8 +27,11 @@ fetch("https://dog.ceo/api/breeds/image/random")
     const allPhotos = data[num];
     console.log(allPhotos);
     console.log("allPhotos =", allPhotos);
-    document.getElementById("allPhotos").innerHTML = allPhotos;
+    document.getElementById("allPhotos").setAttribute("src", data.message);
+   // allPhotos.href = "https://images.dog.ceo/breeds/collie-border/n02106166_1460.jpg"
   });
+
+
 function displaydogFact(data) {
   document.getElementById("allPhotos");
 }
