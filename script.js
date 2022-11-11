@@ -9,14 +9,11 @@ fetch("https:dog-facts-api.herokuapp.com/api/v1/resources/dogs/all")
     const num = Math.floor(Math.random() * data.length);
     const dogFact = data[num].fact;
     console.log("dogFact =", dogFact);
-    document.getElementById("dogFact").innerHTML=dogFact;
+    document.getElementById("dogFact").innerHTML = dogFact;
   });
 function displaydogFact(data) {
   document.getElementById("dogFact");
 }
-
-
-
 
 // This function fetches the random-dog-pictures
 fetch("https://dog.ceo/api/breeds/image/random")
@@ -27,6 +24,11 @@ fetch("https://dog.ceo/api/breeds/image/random")
     //this function selects a random dog picture
     console.log(data);
     const num = Math.floor(Math.random() * data.length);
-    const dogPicture = data[num];
-    console.log(dogPicture);
+    const allPhotos = data[num];
+    console.log(allPhotos);
+    console.log("allPhotos =", allPhotos);
+    document.getElementById("allPhotos").innerHTML = allPhotos;
   });
+function displaydogFact(data) {
+  document.getElementById("allPhotos");
+}
