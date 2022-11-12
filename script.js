@@ -16,21 +16,25 @@ function displaydogFact(data) {
 }
 
 // This function fetches the random-dog-pictures
-fetch("https://dog.ceo/api/breeds/image/random")
+fetch("https://dog.ceo/api/breeds/image/random/4")
   .then(function (response) {
     return response.json();
   })
   .then(function (data) {
     //this function selects a random dog picture
     console.log(data);
-    const num = Math.floor(Math.random() * data.length);
-    const allPhotos = data[num];
-    console.log(allPhotos);
-    console.log("allPhotos =", allPhotos);
-    document.getElementById("allPhotos").setAttribute("src", data.message);
-   // allPhotos.href = "https://images.dog.ceo/breeds/collie-border/n02106166_1460.jpg"
-  });
+    // const num = Math.floor(Math.random() * data.length);
+    // const allPhotos = data[num];
+    // console.log(allPhotos);
+    // console.log("allPhotos =", allPhotos);
+    for (let i = 0; i < data.message.length; i++) {
+      const fourDogs = document.createElement("img");
+      fourDogs.setAttribute("src", data.message[i]);
+      document.getElementById("allPhotos").appendChild(fourDogs);
+    }
 
+    // allPhotos.href = "https://images.dog.ceo/breeds/collie-border/n02106166_1460.jpg"
+  });
 
 function displaydogFact(data) {
   document.getElementById("allPhotos");
