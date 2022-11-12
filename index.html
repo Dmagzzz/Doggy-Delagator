@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doggy Delegator</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
 
     <style>
-        .center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     </style>
-</head>
+  </head>
 
-<!-- .hero-->
+  <!-- .hero-->
 
-<body>
-    <section class="hero ">
-        <div class="hero-body">
-            <div class="container ">
-                <figure class="image center">
-                    <img src="images/dog-pic.png" style="max-width: 450px;">
-                </figure>
-                <h1 class="Title has-text-dark is-family-code "> <i> Looking to adopt a dog that soon needs a home? </i></h1>
-            </div>
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <figure class="image center">
+            <img src="images/dog-pic.png" style="max-width: 450px" />
+          </figure>
+          <h1 class="Title has-text-dark is-family-code">
+            <i> Looking to adopt a dog that soon needs a home? </i>
+          </h1>
         </div>
+      </div>
     </section>
     <!-- .hero-->
-
 
     <!-- DogPictures-->
 
     <div id="allPhotos"></div>
+    <button id="btn"></button>
+    <button onclick="checkThisOut()">check this out</button>
+
     <div id="favoritePhotos"></div>
 
     <div id="dogFact"></div>
 
+    <div class="p1 box has-text-dark">Fun facts will go here</div>
 
-    <div class="p1 box has-text-dark">
-    Fun facts will go here
-      </div>
-
-<div class="p2 bottom">Created By Amber, Dillon & Whit</div>
+    <div class="p2 bottom">Created By Amber, Dillon & Whit</div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
