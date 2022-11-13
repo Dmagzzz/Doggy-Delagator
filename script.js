@@ -14,7 +14,10 @@ fetch("https:dog-facts-api.herokuapp.com/api/v1/resources/dogs/all")
 function displaydogFact(data) {
   document.getElementById("dogFact");
 }
+// element.addEventListener("click", function(".btn")) {
+//   document.getElementById(".btn").innerHTML = "Hello World";
 
+// }
 // This function fetches the random-dog-pictures
 fetch("https://dog.ceo/api/breeds/image/random/4")
   .then(function (response) {
@@ -38,4 +41,7 @@ fetch("https://dog.ceo/api/breeds/image/random/4")
 
 function displaydogFact(data) {
   document.getElementById("allPhotos");
+}
+function checkThisOut() {
+  alert("checkThisOut");
 }
