@@ -42,6 +42,25 @@ fetch("https://dog.ceo/api/breeds/image/random/4")
 function displaydogFact(data) {
   document.getElementById("allPhotos");
 }
+
+function saveToStorage(favoritePhotos) { 
+  const history = JSON.parse(localStorage.getItem('savedFavoritePhotos')) || []
+  console.log(history);
+  history.push(favoritePhotos);
+  localStorage.setItem('savedFavoritePhotos', JSON.stringify(history))
+  renderHistory()
+}
+
+function renderHistory() { //we may be able to use this plus a For loop to write favorites to a new screen
+  console.log("rendering")
+  const history = JSON.parse(localStorage.getItem('savedFavoritePhotos')) || []
+  console.log(history);
+ }
 function checkThisOut() {
-  alert("checkThisOut");
+  //const url = allPhotos.getAttribute('src');
+ // window.open(url,'#allPhotos','width=largeImage.stylewidth,height=largeImage.style.height,resizable=1');
+ //window.location.href = allPhotos;
+saveToStorage(favoritePhotos);
+ window.location.href = document.getElementById("allPhotos");// This creates a new window but does not yet properly load
+ alert("checkThisOut");
 }
