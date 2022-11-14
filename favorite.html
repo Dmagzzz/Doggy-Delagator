@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/1986c5a88a.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>Doggy Delegator</title>
-  </head>
-  <body>
-    <header class="hero">
-      <div class="hero-body">
-        <div class="container">
-          <figure class="image center">
-            <img src="images/dog-pic.png" style="max-width: 450px" />
-          </figure>
-          <h1 class="Title has-text-dark is-family-code">
-            <i>
-              Looking to adopt a dog that soon needs a home? <br />
-              <strong>Favorited Doggies Page</strong></i
-            >
-          </h1>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <script src="https://kit.fontawesome.com/1986c5a88a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Doggy Delegator</title>
+  <style>
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <figure class="image center">
+          <img src="images/dog-pic.png" style="max-width: 450px" />
+        </figure>
+        <h1 class="Title has-text-dark is-family-code">
+          <i>
+            Looking to adopt a dog that soon needs a home? <br />
+            <strong>Favorited Doggies Page</strong></i>
+        </h1>
       </div>
-    </header>
-    <section id="allPhotos"></section>
-    <button onclick="window.history.back()">Back</button>
-    <script src="favorite.js"></script>
-  </body>
+    </div>
+  </header>
+  <section id="allPhotos"></section>
+  <button class="backbtn" style="height:100px;width:1300px " onclick="window.history.back()">Back</button>
+  <script src="favorite.js"></script>
+
+</body>
+
 </html>
