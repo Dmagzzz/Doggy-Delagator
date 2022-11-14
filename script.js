@@ -43,7 +43,7 @@ function checkThisOut(target) {
   const imgId = target.getAttribute("data-img-id");
   const imgEl = document.getElementById(imgId);
   const imgUrl = imgEl.getAttribute("src");
-  history.push(imgUrl);
+  history.unshift(imgUrl);
   localStorage.setItem("savedFavoritePhotos", JSON.stringify(history));
   window.location.href = "favorite.html";
 }
