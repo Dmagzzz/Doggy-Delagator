@@ -18,15 +18,20 @@ body {
 }
 
 .p1 {
-  font-family: "Lucida Console", "Courier New", monospace
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .p2 {
-  font-family: "Lucida Console", "Courier New", monospace
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .backbtn {
   background: linear-gradient(45deg, rgb(248, 248, 76), rgb(239, 61, 61));
-  font-family: "Lucida Console", "Courier New", monospace font-size: 28px;
-
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 28px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
