@@ -1,139 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-    <script src="https://kit.fontawesome.com/1986c5a88a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Doggy Delegator</title>
-    <style>
-        .center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="hero">
-        <div class="hero-body">
-            <div class="container">
-                <figure class="image center">
-                    <img src="images/dog-pic.png" style="max-width: 450px"
-                    alt = "Dog logo with the words: Happy Dogs, Happy People" />
-                </figure>
-                <h1 class="Title has-text-dark is-family-code">
-                    <i> Looking to adopt a dog that soon needs a home? </i>
-                </h1>
-            </div>
+      <section class="hero-body">
+        <div class="container">
+          <figure class="image center">
+            <img
+              src="assets/dog-pic.png"
+              style="max-width: 450px"
+              alt="Dog logo with the words: Happy Dogs, Happy People"
+            />
+          </figure>
+          <h1 class="Title has-text-dark is-family-code">
+            <i> Looking to adopt a dog that soon needs a home? </i>
+          </h1>
         </div>
+      </section>
     </header>
 
-
-    <section class="card">
-        <div class="columns">
-            <div class="column">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img id="dog-img-0" src="https://bulma.io/images/placeholders/1280x960.png"
-                                alt="Placeholder image" />
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <button id="btn" data-img-id="dog-img-0" class="fa-solid fa-hand-holding-heart fa-1x"
-                                    onclick="checkThisOut(this)"></button>
-                            </div>
-                            <div class="media-content">
-                                If you're interested in adopting this dog, hit the button to
-                                save for later!
-                            </div>
-                        </div>
-                    </div>
+    <main class="card">
+      <div class="columns">
+        <section class="column">
+          <div class="card">
+            <section class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  id="dog-img-0"
+                  src="https://bulma.io/images/placeholders/1280x960.png"
+                  alt="Placeholder image"
+                />
+              </figure>
+            </section>
+            <section class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <button
+                    id="btn"
+                    data-img-id="dog-img-0"
+                    class="fa-solid fa-hand-holding-heart fa-1x"
+                    onclick="checkThisOut(this)"
+                  ></button>
                 </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img id="dog-img-1" src="https://bulma.io/images/placeholders/1280x960.png"
-                                alt="Placeholder image" />
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <button id="btn" data-img-id="dog-img-1" class="fa-solid fa-hand-holding-heart fa-1x"
-                                    onclick="checkThisOut(this)"></button>
-                            </div>
-                            <div class="media-content">
-                                If you're interested in adopting this dog, hit the button to
-                                save for later!
-                            </div>
-                        </div>
-                    </div>
+                <p class="media-content">
+                  If you're interested in adopting this dog, hit the button to
+                  save for later!
+                </p>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="column">
+          <div class="card">
+            <section class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  id="dog-img-1"
+                  src="https://bulma.io/images/placeholders/1280x960.png"
+                  alt="Placeholder image"
+                />
+              </figure>
+            </section>
+            <section class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <button
+                    id="btn"
+                    data-img-id="dog-img-1"
+                    class="fa-solid fa-hand-holding-heart fa-1x"
+                    onclick="checkThisOut(this)"
+                  ></button>
                 </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img id="dog-img-2" src="https://bulma.io/images/placeholders/1280x960.png"
-                                alt="Placeholder image" />
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <button id="btn" data-img-id="dog-img-2" class="fa-solid fa-hand-holding-heart fa-1x"
-                                    onclick="checkThisOut(this)"></button>
-                            </div>
-                            <div class="media-content">
-                                If you're interested in adopting this dog, hit the button to
-                                save for later!
-                            </div>
-                        </div>
-                    </div>
+                <p class="media-content">
+                  If you're interested in adopting this dog, hit the button to
+                  save for later!
+                </p>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="column">
+          <div class="card">
+            <section class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  id="dog-img-2"
+                  src="https://bulma.io/images/placeholders/1280x960.png"
+                  alt="Placeholder image"
+                />
+              </figure>
+            </section>
+            <section class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <button
+                    id="btn"
+                    data-img-id="dog-img-2"
+                    class="fa-solid fa-hand-holding-heart fa-1x"
+                    onclick="checkThisOut(this)"
+                  ></button>
                 </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img id="dog-img-3" src="https://bulma.io/images/placeholders/1280x960.png"
-                                alt="Placeholder image" />
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <button id="btn" data-img-id="dog-img-3" class="fa-solid fa-hand-holding-heart fa-1x"
-                                    onclick="checkThisOut(this)"></button>
-                            </div>
-                            <div class="media-content">
-                                If you're interested in adopting this dog, hit the button to
-                                save for later!
-                            </div>
-                        </div>
-                    </div>
+                <p class="media-content">
+                  If you're interested in adopting this dog, hit the button to
+                  save for later!
+                </p>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="column">
+          <div class="card">
+            <section class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  id="dog-img-3"
+                  src="https://bulma.io/images/placeholders/1280x960.png"
+                  alt="Placeholder image"
+                />
+              </figure>
+            </section>
+            <section class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <button
+                    id="btn"
+                    data-img-id="dog-img-3"
+                    class="fa-solid fa-hand-holding-heart fa-1x"
+                    onclick="checkThisOut(this)"
+                  ></button>
                 </div>
-            </div>
-        </div>
-    </section>
+                <p class="media-content">
+                  If you're interested in adopting this dog, hit the button to
+                  save for later!
+                </p>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
 
     <div id="favoritePhotos"></div>
 
-    <section class="p1 box has-text-dark" id="dogFact"> </section>
+    <section class="p1 box has-text-dark" id="dogFact"></section>
 
     <footer class="p2 bottom">Created By Amber, Dillon & Whit</footer>
-    
-    <script src="script.js"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/1986c5a88a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
