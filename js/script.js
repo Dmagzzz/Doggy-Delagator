@@ -1,5 +1,5 @@
 
-fetch("https:dog-facts-api.herokuapp.com/api/v1/resources/dogs/all")
+fetch("https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all")
   .then(function (response) {
     return response.json();
   })
